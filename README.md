@@ -6,6 +6,10 @@ The project cards section can dynamically arrange themselves as we resize the sc
 
 Try it yourself!
 
+## Live Preview
+
+Click <a href="https://bagasprimanto.github.io/admin-dashboard/" target="_blank">here</a> to see the project live!
+
 ## What I Learned
 In this project I learned the following:
 
