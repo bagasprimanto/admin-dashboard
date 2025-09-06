@@ -88,7 +88,7 @@ h6 {
     --blue: rgb(0, 155, 217);
     --dark-blue: rgb(3, 117, 162);
     --grey: rgb(233, 230, 230);
-
+    --dark-grey: grey;
     /* Border */
     --rounded: 24px;
 }
@@ -97,12 +97,8 @@ h6 {
     font-family: sans-serif;
 }
 
-html {
-    height: 100%;
-}
-
 body {
-    min-height: 100vh;
+    max-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
@@ -264,6 +260,48 @@ ul li {
     background-color: var(--dark-blue);
 }
 
+/* Main */
+
 .main {
     background-color: var(--grey);
+    padding: 16px 14px;
+}
+
+.main h2 {
+    font-size: 1.1rem;
+    font-weight: var(--bold);
+}
+
+/* Main - Projects */
+.main .projects .project {
+    background-color: var(--white);
+}
+
+.main .projects h3 {
+    font-size: 1rem;
+    font-weight: var(--bold);
+}
+
+.main .projects p {
+    font-size: 0.8rem;
+    color: var(--dark-grey);
+}
+
+/* Main - Announcements */
+.main .announcements {
+    background-color: var(--white);
+}
+
+.main .announcements h3 {
+    font-size: 0.9rem;
+}
+
+.main .announcements p {
+    font-size: 0.7rem;
+    color: var(--dark-grey);
+}
+
+/* Main - Trending */
+.main .trending {
+    background-color: var(--white);
 }
