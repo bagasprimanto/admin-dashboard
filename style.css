@@ -240,6 +240,19 @@ ul li {
     align-items: center;
 }
 
+.header .profile-info a img {
+    min-width: 2rem;
+}
+
+.header .profile-info a {
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.header .profile-info a:hover {
+    background-color: var(--grey);
+}
+
 .header .profile-info .user-name {
     font-weight: var(--bold);
 }
