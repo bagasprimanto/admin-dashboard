@@ -359,11 +359,24 @@ ul li {
     display: grid;
     grid-template-columns: repeat(3, min-content);
     justify-content: end;
-    gap: 8px;
+    gap: 12px;
 }
 
 .main .projects .project button {
     cursor: pointer;
+    appearance: none;
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.main .projects .project button:hover {
+    background-color: var(--grey);
+}
+
+.main .projects .project button img {
+    min-width: 1.5rem;
 }
 
 .main .projects .project .content h3 {
