@@ -79,6 +79,15 @@ h6 {
 
 /* CSS content */
 
+*:root {
+    --bold: 700;
+    --white: white;
+}
+
+* {
+    font-family: sans-serif;
+}
+
 html {
     height: 100%;
 }
@@ -89,10 +98,50 @@ body {
     grid-template-columns: 1fr 4fr;
 }
 
+ul,
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sidebar */
+
 .sidebar {
     background-color: rgb(0, 155, 217);
-    color: white;
+    color: var(--white);
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 48px;
+    padding: 16px;
 }
+
+.sidebar h1 {
+    font-size: 1.8rem;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar .main-nav ul,
+.other-nav ul {
+    display: grid;
+    gap: 14px;
+}
+
+.sidebar .nav-item {
+    font-weight: var(--bold);
+    font-size: 1.25rem;
+}
+
+/* Middle (Header and Main) */
 
 .middle {
     display: grid;
