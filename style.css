@@ -208,7 +208,7 @@ ul li {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-auto-rows: 1fr;
-    gap: 24px;
+    gap: 8px;
     z-index: 1;
 }
 
@@ -244,6 +244,10 @@ ul li {
     min-width: 2rem;
 }
 
+.header .profile-info .profile-pic img {
+    width: 3rem;
+}
+
 .header .profile-info a {
     padding: 8px;
     border-radius: 50%;
@@ -269,9 +273,13 @@ ul li {
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
 
     font-weight: var(--bold);
+}
+
+.header .large-user-info img {
+    width: 3.8rem;
 }
 
 .header .large-user-info .greetings {
@@ -449,7 +457,12 @@ ul li {
     display: grid;
     grid-template-columns: max-content 1fr;
     align-items: center;
-    gap: 16px;
+    gap: 12px;
+}
+
+.main .trending .prof-pic {
+    width: 100%;
+    max-width: 3rem;
 }
 
 .main .trending .user-info {
