@@ -15,3 +15,6 @@ In this project I learned the following:
 
 * Used HTML and CSS Grid to layout and style elements on the screen
 * Combine the usage of CSS grid and CSS flex to achieve a design
+
+## Credits
+* <a href="https://www.flaticon.com/free-icons/dashboard" title="dashboard icons">Dashboard icons created by Pixel perfect - Flaticon</a>
