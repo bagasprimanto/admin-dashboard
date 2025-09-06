@@ -136,10 +136,18 @@ ul li {
 
 .sidebar .logo {
     padding: 0 14px;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 12px;
+    align-items: center;
 }
 
-.sidebar h1 {
+.sidebar .logo h1 {
     font-size: 1.8rem;
+}
+
+.sidebar .logo img {
+    min-width: 3rem;
 }
 
 .sidebar a {
