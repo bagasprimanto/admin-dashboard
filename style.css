@@ -291,6 +291,7 @@ ul li {
 .main .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: min-content;
     gap: 24px;
 }
 
@@ -318,7 +319,7 @@ ul li {
 }
 
 .main .projects .project .content h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: var(--bold);
     margin-bottom: 8px;
 }
