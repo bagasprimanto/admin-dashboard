@@ -89,6 +89,8 @@ h6 {
     --dark-blue: rgb(3, 117, 162);
     --grey: rgb(233, 230, 230);
     --dark-grey: grey;
+    --gold: rgb(245, 208, 1);
+
     /* Border */
     --rounded: 24px;
 }
@@ -238,6 +240,7 @@ ul li {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    align-items: center;
 }
 
 .header .buttons button {
@@ -280,18 +283,47 @@ ul li {
 /* Main - Projects */
 .main .section-projects {
     grid-row: span 2;
+
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
+.main .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
 }
 
 .main .projects .project {
     background-color: var(--white);
+    height: 240px;
+
+    padding: 16px;
+    border-radius: 6px;
+    border-left: 8px solid var(--gold);
+
+    display: grid;
+    grid-template-rows: 1fr min-content;
 }
 
-.main .projects h3 {
-    font-size: 1rem;
+.main .projects .project .action-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, min-content);
+    justify-content: end;
+    gap: 8px;
+}
+
+.main .projects .project button {
+    cursor: pointer;
+}
+
+.main .projects .project .content h3 {
+    font-size: 1.1rem;
     font-weight: var(--bold);
+    margin-bottom: 8px;
 }
 
-.main .projects p {
+.main .projects .project .content p {
     font-size: 0.8rem;
     color: var(--dark-grey);
 }
