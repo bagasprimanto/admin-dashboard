@@ -150,17 +150,25 @@ ul li {
 .sidebar .main-nav ul,
 .other-nav ul {
     display: grid;
-    /* gap: 14px; */
 }
 
 .sidebar .main-nav a,
 .sidebar .other-nav a {
-    padding: 14px;
+    padding: 12px;
 }
 
-.sidebar .nav-item {
+.sidebar li.nav-item {
     font-weight: var(--bold);
     font-size: 1.25rem;
+
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+.sidebar .nav-item img {
+    min-width: 1.5rem;
 }
 
 .sidebar .main-nav a:hover,
