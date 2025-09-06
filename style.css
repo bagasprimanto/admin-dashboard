@@ -221,9 +221,7 @@ ul li {
     grid-template-columns: max-content 1fr;
     align-items: center;
     gap: 32px;
-}
 
-.header .large-user-info {
     font-weight: var(--bold);
 }
 
