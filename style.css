@@ -80,8 +80,17 @@ h6 {
 /* CSS content */
 
 *:root {
+    /* Font */
     --bold: 700;
+
+    /* Colors */
     --white: white;
+    --blue: rgb(0, 155, 217);
+    --dark-blue: rgb(3, 117, 162);
+    --grey: rgb(233, 230, 230);
+
+    /* Border */
+    --rounded: 24px;
 }
 
 * {
@@ -108,7 +117,7 @@ ul li {
 /* Sidebar */
 
 .sidebar {
-    background-color: rgb(0, 155, 217);
+    background-color: var(--blue);
     color: var(--white);
 
     /* display: flex;
@@ -118,7 +127,11 @@ ul li {
     display: grid;
     grid-auto-rows: min-content;
     gap: 48px;
-    padding: 16px;
+    padding: 16px 0;
+}
+
+.sidebar .logo {
+    padding: 0 14px;
 }
 
 .sidebar h1 {
@@ -133,12 +146,22 @@ ul li {
 .sidebar .main-nav ul,
 .other-nav ul {
     display: grid;
-    gap: 14px;
+    /* gap: 14px; */
+}
+
+.sidebar .main-nav a,
+.sidebar .other-nav a {
+    padding: 14px;
 }
 
 .sidebar .nav-item {
     font-weight: var(--bold);
     font-size: 1.25rem;
+}
+
+.sidebar .main-nav a:hover,
+.sidebar .other-nav a:hover {
+    background-color: var(--dark-blue);
 }
 
 /* Middle (Header and Main) */
@@ -148,10 +171,97 @@ ul li {
     grid-template-rows: 1fr 5fr;
 }
 
+/* Header */
+
+.header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {
     background-color: rgb(255, 254, 254);
+    padding: 16px 64px;
+    padding-bottom: 12px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 24px;
+}
+
+.header .search-bar {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    gap: 16px;
+    align-items: center;
+}
+
+.header .profile-info {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 24px;
+    justify-content: end;
+    align-items: center;
+}
+
+.header .profile-info .user-name {
+    font-weight: var(--bold);
+}
+
+.header .search-bar input {
+    appearance: none;
+    background-color: var(--grey);
+    border: none;
+    border-radius: var(--rounded);
+    padding: 4px 16px;
+}
+
+.header .large-user-info {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 32px;
+}
+
+.header .large-user-info {
+    font-weight: var(--bold);
+}
+
+.header .large-user-info .greetings {
+    font-size: 0.75rem;
+}
+
+.header .large-user-info .user-name {
+    font-size: 1.2rem;
+}
+
+.header .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.header .buttons button {
+    appearance: none;
+    background-color: var(--blue);
+
+    border: none;
+    border-radius: var(--rounded);
+
+    color: var(--white);
+    cursor: pointer;
+
+    font-weight: var(--bold);
+
+    min-width: 100px;
+    height: min-content;
+    padding: 8px;
+}
+
+.header .buttons button:hover {
+    background-color: var(--dark-blue);
 }
 
 .main {
-    background-color: rgb(196, 196, 196);
+    background-color: var(--grey);
 }
