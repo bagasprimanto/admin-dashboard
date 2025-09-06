@@ -219,6 +219,15 @@ ul li {
     align-items: center;
 }
 
+.header .search-bar label {
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.header .search-bar label:hover {
+    background-color: var(--grey);
+}
+
 .header .search-bar label img {
     min-width: 2rem;
 }
