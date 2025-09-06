@@ -154,7 +154,7 @@ ul li {
 
 .sidebar .main-nav a,
 .sidebar .other-nav a {
-    padding: 12px;
+    padding: 12px 24px;
 }
 
 .sidebar li.nav-item {
