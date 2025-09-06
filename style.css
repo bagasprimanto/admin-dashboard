@@ -219,6 +219,10 @@ ul li {
     align-items: center;
 }
 
+.header .search-bar label img {
+    min-width: 2rem;
+}
+
 .header .profile-info {
     display: grid;
     grid-template-columns: repeat(3, max-content);
