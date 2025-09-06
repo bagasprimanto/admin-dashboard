@@ -94,6 +94,9 @@ h6 {
     /* Border */
     --rounded: 24px;
     --main-rounded: 6px;
+
+    /* Box-shadow */
+    --section-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -303,6 +306,8 @@ ul li {
     padding: 16px;
     border-radius: var(--main-rounded);
     border-left: 8px solid var(--gold);
+    -webkit-box-shadow: var(--section-box-shadow);
+    box-shadow: var(--section-box-shadow);
 
     display: grid;
     grid-template-rows: 1fr min-content;
@@ -343,6 +348,9 @@ ul li {
     display: grid;
     align-items: center;
     padding: 16px;
+
+    -webkit-box-shadow: var(--section-box-shadow);
+    box-shadow: var(--section-box-shadow);
 }
 
 .main .announcements .announcement {
@@ -377,6 +385,9 @@ ul li {
     display: grid;
     align-items: center;
     padding: 16px;
+
+    -webkit-box-shadow: var(--section-box-shadow);
+    box-shadow: var(--section-box-shadow);
 }
 
 .main .trending .user {
