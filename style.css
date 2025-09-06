@@ -365,6 +365,31 @@ ul li {
 }
 
 /* Main - Trending */
+.main .section-trending {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
 .main .trending {
     background-color: var(--white);
+    border-radius: var(--main-rounded);
+
+    display: grid;
+    align-items: center;
+    padding: 16px;
+}
+
+.main .trending .user {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    gap: 16px;
+}
+
+.main .trending .user-info {
+    font-size: 0.9rem;
+}
+
+.main .trending .user .user-name {
+    color: var(--dark-grey);
 }
